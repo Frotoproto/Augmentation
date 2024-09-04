@@ -85,7 +85,25 @@ nav h1 {
         }
         .content:hover {
             transform: scale(1.05);
+            border-radius: 10px;
+            border: 2px solid #55ffa1; /* Border color on hover */
+            box-shadow: 0 0 15px #55ffa1; /* Glowing effect */
+            animation: borderGlow 0.5s forwards;
         }
+
+
+ @keyframes borderGlow {
+    from {
+        border-color: transparent;
+        box-shadow: 0 0 0 transparent;
+    }
+    to {
+        border-color: #55ffa1;
+        box-shadow: 0 0 15px #55ffa1;
+    }
+    
+}
+
         .content video {
             width: 100%;
             height: auto;
