@@ -14,6 +14,17 @@ nav {
     margin: auto;
 }
 
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #55ffa1;;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    box-shadow: 0 0 15px #55ffa1;
+    background: #55ffa1;
+  }
 
 nav h1 {
     font-size: 4vw;
@@ -27,6 +38,7 @@ nav h1 {
             color: #ffffff;
             margin: 0;
             padding: 0;
+            cursor: none;
         }
         .timeline {
             position: relative;
@@ -182,6 +194,7 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
+    cursor: auto;
 }
 
 /* Simplified navigation bar */
@@ -235,6 +248,10 @@ body.scrolled nav {
     
 }
 
+.cursor {
+    visibility: hidden;
+  }  
+
 /* Circular accent */
 .container::after {
     content: '';
@@ -262,7 +279,7 @@ body.scrolled nav {
 
 /* Hover effect */
 .content:hover {
-    transform: scale(1.05);
+    transform: scale(1.0);
 }
 
 /* Video styling */
