@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Timeline</title>
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+</head>
+<body>
+    
+    <div class="cursor"></div>
+
+<nav>
+    <h1 onclick="window.location.href='index.html';" style="cursor: pointer;">Augmentation Films</h1>
+</nav>
+
+<div class="timeline">
+    <div class="container right">
+        <div class="title">Chase, March 11th, 2023</div>
+        <div class="content">
+            <video controls>
+                <source src="march11-23.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="title">Skateboard, May 13th, 2024</div>
+        <div class="content">
+            <video controls>
+                <source src="may13-24.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="title">Boo-Edit, July 20, 2024</div>
+        <div class="content">
+            <video controls>
+                <source src="jul20-24.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="title">Boothama Anthem, August 7, 2024</div>
+        <div class="content">
+            <video controls>
+                <source src="aug7-24.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="title">BooraBoora, August 10, 2024</div>
+        <div class="content">
+            <video controls>
+                <source src="Aug10-24.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="title">BooMasala, August 18, 20 24</div>
+        <div class="content">
+            <video controls>
+                <source src="Aug18-24.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="title">Fart of the century trailer, Sep 2, 2024</div>
+        <div class="content">
+            <video controls>
+                <source src="railer (1).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Add a class to the body when scrolling
+    window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY > 0;
+        document.body.classList.toggle('scrolled', scrolled);
+    });
+    
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', e => {
+        cursor.setAttribute("style", "top: " + (e.pageY - 100) + "px; left: " + (e.pageX - 100) + "px;");
+    });
+  
+</script>
+
+</body>
+</html>

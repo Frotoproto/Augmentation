@@ -17,11 +17,12 @@ nav {
     padding: 0 1%;
     z-index: 5;
     margin: auto;
+    pointer-events: auto;
 }
 
 .cursor {
-    width: 20px;
-    height: 20px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #ffffff;;
     border-radius: 50%;
     position: absolute;
@@ -29,6 +30,9 @@ nav {
     transition-timing-function: ease-out;
     box-shadow: 0 0 15px #ffffff;
     background: #ffffff;
+    pointer-events: none;
+    z-index: 0;
+    filter: blur(100px);
   }
 
 nav h1 {
@@ -44,14 +48,16 @@ nav h1 {
             color: #ffffff;
             margin: 0;
             padding: 0;
-            cursor: none;
+            
         }
         .timeline {
             position: relative;
             max-width: 1200px;
             margin: 20px auto;
             left: 10%;
+            cursor: auto;
         }
+
         .timeline::after {
             content: '';
             position: absolute;
@@ -96,16 +102,18 @@ nav h1 {
             padding: 0;
             background-color: #333;
             position: relative;
-            border-radius: 15px;
+            border-radius: 25px;
             overflow: hidden;
             transition: transform 0.3s ease;
+            cursor: auto;
         }
         .content:hover {
             transform: scale(1.05);
-            border-radius: 10px;
+            border-radius: 25px;
             border: 2px solid #ffffff; /* Border color on hover */
             box-shadow: 0 0 15px #ffffff; /* Glowing effect */
             animation: borderGlow 0.5s forwards;
+            cursor: auto;
         }
 
 

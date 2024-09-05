@@ -11,7 +11,7 @@
     <div class="cursor"></div>
 
 <nav>
-    <h1>Augmentation Films</h1>
+    <h1 onclick="window.location.href='home1.html';" style="cursor: pointer;">Augmentation Films</h1>
 </nav>
 
 <div class="timeline">
@@ -89,7 +89,7 @@
     
     const cursor = document.querySelector('.cursor');
     document.addEventListener('mousemove', e => {
-        cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;");
+        cursor.setAttribute("style", "top: " + (e.pageY - 100) + "px; left: " + (e.pageX - 100) + "px;");
     });
   
 </script>
